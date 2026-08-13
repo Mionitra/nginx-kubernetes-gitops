@@ -1,0 +1,30 @@
+@charset "UTF-8";/*! ------------------------------------------------
+ * Project Name: Axio Coming Soon Template
+ * Project Description: Axio - awesome coming soon template to kick-start your project
+ * Tags: mix_design, axio, coming soon, under construction, template, coming soon page, html5, css3
+ * Version: 4.0.2
+ * Build Date: April 2017
+ * Last Update: December 2024
+ * This product is available exclusively on Themeforest
+ * Author: mix_design
+ * Author URI: https://themeforest.net/user/mix_design
+ * File name: color-mono.css
+ * ------------------------------------------------
+ *
+ * ------------------------------------------------
+ * Table of Contents
+ * ------------------------------------------------
+ *  1. Basic Color Options
+ *  2. Menu Colors
+ *  3. Intro Сopyright Colors
+ *  4. Main Section Aside Colors
+ *  5. Socials Colors
+ *  6. Buttons & Triggers Colors
+ *  7. Forms and Reply Groups Colors
+ *  8. PhotoSwipe Gallery Colors
+ *  9. Google Map Controls Colors
+ *  10. Notify Screen Colors
+ *  11. Stay-in-touch Screen Colors
+ * ------------------------------------------------
+ * Table of Contents End
+ * ------------------------------------------------ */::-moz-selection{background-color:#7c7d80;color:#fff;text-shadow:none}::selection{background-color:#7c7d80;color:#fff;text-shadow:none}::-webkit-scrollbar{background:#cecece}::-webkit-scrollbar-track{background-color:#cecece}::-webkit-scrollbar-thumb{background-color:#303030}html{-webkit-tap-highlight-color:transparent}body{color:#303030;background-color:#fff}h1{color:#fff}.headline__subtitle{color:#fff}.headline__description{color:#fff}h2{color:#262626}h2::after{background-color:#d9d9d9}h3{color:#262626}h3.light{color:#fff}h4{color:#262626}h4.light{color:#fff}a{color:#262626}a.light{color:#fff}.no-touch a:hover{color:#24262b}.no-touch a:hover.light{color:#fff}p{color:#262626}p.light{color:#fff}p.copyright{color:rgba(255,255,255,.6)}p.copyright a{color:#fff}.no-touch p.copyright a:hover{color:rgba(255,255,255,.6)}.aside__title{color:#262626}.aside__text{color:#303030}.popup__title{color:#262626}.popup__title.light{color:#fff}.popup__subtitle{color:#303030}.popup__subtitle.light{color:rgba(255,255,255,.8)}.clip .words-wrapper::after{background-color:rgba(255,255,255,.16)}.section-main{background-color:#e6e6e6}.section-main__intro{background-color:#24262b}.color-layer-medium{background-color:rgba(0,0,0,.4)}.color-layer-dark{background-color:rgba(0,0,0,.6)}.bg-light{background-color:#fff}.bg-medium{background-color:#f2f2f2}.bg-dark{background-color:#24262b}.menu{background-color:#24262b}@media only screen and (min-width:1200px){.menu{background-color:transparent}}.navigation li a{color:#fff}.no-touch .navigation li:hover a{color:rgba(255,255,255,.6)}.menu-close{border:2px solid #fff}.menu-close i{color:#fff}p.copyright{color:rgba(255,255,255,.6)}p.copyright a{color:#fff}.no-touch p.copyright a:hover{color:rgba(255,255,255,.6)}.section-main__aside{background-color:#fff}.socials li a{color:#262626}.no-touch .socials li a:hover{color:#aaa}.button-solid-light{background-color:#fff;border:2px solid #fff;color:#262626}.no-touch .button-solid-light:hover{background-color:transparent;color:#fff;border:2px solid #fff}.button-solid-dark{background-color:#24262b;border:2px solid #24262b;color:#fff}.no-touch .button-solid-dark:hover{background-color:transparent;border:2px solid #303030;color:#303030}.button-outline-light{background-color:transparent;color:#fff;border:2px solid #fff}.no-touch .button-outline-light:hover{background-color:#fff;border:2px solid #fff;color:#262626}.button-outline-dark{background-color:transparent;border:2px solid #303030;color:#303030}.no-touch .button-outline-dark:hover{background-color:#24262b;border:2px solid #24262b;color:#fff}.form-dark ::-webkit-input-placeholder{color:#838383}.form-dark :-moz-placeholder{color:#838383}.form-dark ::-moz-placeholder{color:#838383}.form-dark :-ms-input-placeholder{color:#838383}.form-dark input:focus:required:invalid,.form-dark textarea:focus:required:invalid{color:#262626}.form-dark input:required:valid,.form-dark textarea:required:valid{color:#262626}.form-dark input,.form-dark textarea{border-bottom:1px solid #303030;color:#262626}.form-dark input:focus,.form-dark textarea:focus{border-bottom:1px solid #aaa}.form-dark .inputs-description{color:#303030}.form-light ::-webkit-input-placeholder{color:rgba(255,255,255,.8);font-weight:400}.form-light :-moz-placeholder{color:rgba(255,255,255,.8);font-weight:400}.form-light ::-moz-placeholder{color:rgba(255,255,255,.8);font-weight:400}.form-light :-ms-input-placeholder{color:rgba(255,255,255,.8);font-weight:400}.form-light input:focus:required:invalid,.form-light textarea:focus:required:invalid{color:#fff}.form-light input:required:valid,.form-light textarea:required:valid{color:#fff}.form-light input,.form-light textarea{border-bottom:1px solid #fff;color:#fff}.form-light input:focus,.form-light textarea:focus{border-bottom:1px solid #999}.form-light .inputs-description{color:rgba(255,255,255,.6)}.reply-group__icon{color:#aaa}.reply-group__icon.light{color:rgba(255,255,255,.6)}.reply-group__title{color:#262626}.reply-group__title.light{color:#fff}.reply-group__text{color:#303030}.reply-group__text.light{color:rgba(255,255,255,.8)}.my-gallery__descr{color:#262626}.my-gallery__descr::after{background-color:#fff}.pswp__caption__center h4{color:#fff}.pswp__caption__center h4 small{color:#fff}.pswp__caption__center p{color:#fff}.pswp__counter{color:#fff}.pswp__bg{background:#151515}.pswp__button--close{background-color:#fff}#zoom-in,#zoom-out{background-color:transparent;border:2px solid #303030;color:#303030}.no-touch #zoom-in:hover,.no-touch #zoom-out:hover{background-color:#24262b;border:2px solid #24262b;color:#fff}.notify{background-color:#24262b}.stayintouch{background-color:#fff}@media only screen and (min-width:1200px){.stayintouch{background-color:transparent}}
