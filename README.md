@@ -243,11 +243,70 @@ openssl s_client -connect localhost:8443 -servername site-statique.local </dev/n
 
 ---
 
+## 8. ArgoCD + GitOps
+
+Le déploiement est piloté par ArgoCD qui surveille en continu le dépôt Git (dossier `k8s/`) et applique/corrige automatiquement l'état du cluster.
+
+**Structure Git**
+```
+mon-repo/
+├── Dockerfile
+├── web/HTML/
+└── k8s/
+    └── manifest.yml
+```
+
+**Application ArgoCD**
+```yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: site-statique
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/tonuser/mon-repo.git
+    targetRevision: main
+    path: k8s
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+```
+```bash
+kubectl apply -f argocd-application.yml
+```
+
+**Accès au dashboard**
+```bash
+kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d; echo
+kubectl port-forward svc/argocd-server -n argocd 8081:443
+# https://localhost:8081  — user: admin
+```
+
+**Vérifications**
+```bash
+kubectl get application site-statique -n argocd
+kubectl describe application site-statique -n argocd
+
+# Test self-heal : supprimer une ressource manuellement, ArgoCD la recrée automatiquement
+kubectl delete svc site-statique-svc
+```
+
+---
+
 ## Déploiement complet
 
 ```bash
 kubectl apply -f manifest.yml
-kubectl get rs,svc,ingress,pods
+kubectl apply -f argocd-application.yml
+kubectl get rs,svc,ingress,pods,application -n default -A
 ```
 
 ## Nettoyage
