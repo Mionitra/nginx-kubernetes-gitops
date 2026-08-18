@@ -5,7 +5,7 @@ metadata:
   labels:
     app: site-statique
 spec:
-  replicas: 6
+  replicas: 4
   selector:
     matchLabels:
       app: site-statique
